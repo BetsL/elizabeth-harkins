@@ -97,7 +97,7 @@ textarea {
 
 
 html {
-    background: url(../img/bkgd2.jpg) no-repeat center center fixed;
+    background: url(../img/bkgd2.jpg) no-repeat center;   /* center fixed?*/
     background-size: cover;
     height: 100%;
 }
@@ -129,8 +129,8 @@ body {
     line-height: 1.3em;
     border-radius: 8px;
     padding: 30px;
-    width: 400px;
-    height: 400px;
+    width: 375px;
+    height: 375px;
 }
 
 .header-container {
@@ -147,7 +147,7 @@ body {
       justify-content: center;
       align-items: center;
       flex-flow: column wrap;
-    padding: 30px;
+    /*padding: 30px;*/
     text-align: center;
 }
 
@@ -255,12 +255,14 @@ body {
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
     #card-content {
+        border-radius: 3px;
         font-size: 1.1em;
     }
 }
 
 @media only screen and (min-width: 240px) and (max-width: 319px)  {
     #card-content {
+        border-radius: 3px;
         font-size: 0.7em;
     }
 }
