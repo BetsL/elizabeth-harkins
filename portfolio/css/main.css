@@ -102,22 +102,23 @@ textarea {
 
 
    html  {
-       font-size: 16px;
+    font-size: 16px;
    }
 
    body  {
-       color: #5d6063;
-       background-color: #d3d3d3;
-       font-family: 'Roboto', sans-serif;
-       font-size: 1em;
+    background-color: #d3d3d3;
+    color: #5d6063;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    line-height: 1.3;
    }
 
    main  {
     color: #d3d3d3;
     margin: 20px;
     border-radius: 5px;
-    padding-bottom: 20px;
     background-image: linear-gradient(to right bottom, #6c6e73, #575d60, #444c4c, #353b38, #282a25);
+    padding-bottom: 20px;
 }
 
 ul,
@@ -136,13 +137,13 @@ h1, h2, h3  {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-h2  {
+/*h2  {
     padding-top: 20px;
-}
+}*/
 
-p {
+/*p {
     line-height: 1.3;
-}
+}*/
 
 img {
     width: 100%;
@@ -150,7 +151,7 @@ img {
 
 figure  {
     margin: 0;
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 .content-wrapper  {
@@ -163,17 +164,16 @@ figure  {
 
 
 header  {
-    margin: 0;
     border: 1px solid #a9a9a9;
-    margin: 20px;
     border-radius: 3px;
+    margin: 20px;
 }
 
 header .content-wrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: row wrap;
     margin: 0;
     width: 100%;
 }
@@ -185,7 +185,7 @@ header .content-wrapper {
       flex-flow: row wrap;
     font-size: 1.1em;
     margin: 0;
-    padding-left: 5px;
+    padding-left: 10px;
     width: 70%;
 }
 
@@ -217,13 +217,45 @@ header nav ul li  {
       flex-flow: row wrap;
     font-size: 1.1em;
     margin: 0;
+    padding-right: 10px;
     width: 25%;
 }
 
 .content-wrapper .personal-icons p i  {
     display: flex;
     justify-content: space-between;
-    padding: 0 5px;
+    padding: 0 10px;
+}
+
+/* Footer */
+
+#contact  {
+    border: 1px solid #a9a9a9;
+    border-radius: 3px;
+    margin: 20px;
+}
+
+#contact .content-wrapper {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+    text-align: center;
+    margin-left: 35px;
+    width: 85%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.footer-content .contact a  {
+    border: 1px solid #a9a9a9;
+    border-radius: 3px;
+    padding: 5px;
 }
 
 
@@ -250,38 +282,38 @@ header nav ul li  {
 }
 
 .hero-area p  {
-    font-size: 1.3em;
     color: #f3e367;
+    font-size: 1.3em;
 }
 
 /* Aside */
 
 aside {
-    line-height: 0.5;
+    /*line-height: 0.5;*/
     border: 1px solid #a9a9a9;
-    margin: 20px;
     border-radius: 3px;
     font-family: 'Roboto Mono', monospace;
+    margin: 0 20px;
 }
 
-/* Features */
+/* Backstory */
 
 #backstory {
-    line-height: 1.3em;
-    margin: 20px;
-    border-radius: 3px;
+    /*line-height: 1.3em;*/
     border-left: 1px solid #f3e367;
+    border-radius: none;
+    margin: 40px 20px;
+    width: 100%;
 }
 
 /* Projects */
 
 #projects {
-    border-radius: 3px;
-    margin: 20px;
-    border-right: 1px solid #a9a9a9;
+    border-radius: none;
+    border-left: 1px solid #a9a9a9;
+    margin: 40px 20px;
+    width: 100%;
 }
-
-
 
 #projects article {
     padding: 20px 0;
@@ -290,57 +322,6 @@ aside {
 .solution {
     color: #f3e367;
 }
-
-/* Footer */
-
-#contact  {
-    border: 1px solid #a9a9a9;
-    margin: 20px;
-    border-radius: 3px;
-}
-
-#contact .content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-    text-align: center;
-    margin-left: 30px;
-    width: 85%;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-}
-
-.footer-content .contact p  {
-
-}
-
-.footer-content .contact p span {
-
-}
-
-.footer-content .contact a  {
-    border: 1px solid #a9a9a9;
-    padding: 5px;
-    border-radius: 3px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
  /* ==========================================================================
@@ -431,22 +412,26 @@ aside {
    ========================================================================== */
 
 
-   @media only screen and (min-width: 240px) and (max-width: 319px)  {
+   /*@media only screen and (min-width: 240px) and (max-width: 319px)  {
        body {
           font-size: 0.7em;
        }
 
-       header nav ul li {
-          font-size: 0.8em;
+       header .content-wrapper  {
+          font-size: 0.7em;
+       }
+
+       .hero-area .content-wrapper  {
+          padding: 20px;
+       }
+
+       .hero-area h1  {
+          font-size: 1.4em;
        }
 
        .hero-area p {
-          font-size: 0.8em;
-          width: 80%;
-       }
-
-       #projects  {
-          border-right: none;
+          font-size: 0.9em;
+          padding-right: 20px;
        }
 
        #contact .content-wrapper  {
@@ -466,7 +451,7 @@ aside {
        }
 
        .hero-area p  {
-          font-size: 1em;
+          font-size: 0.9em;
           width: 80%;
        }
 
@@ -481,7 +466,7 @@ aside {
    }
 
 
-   @media only screen and (min-width: 768px)  {
+   /*@media only screen and (min-width: 768px)  {
         .social-icons,
         .personal-icons {
             font-size: 1.2em;
@@ -527,7 +512,7 @@ aside {
         #contact .content-wrapper {
             margin-left: 70px;
         }
-   }
+   }*/
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
