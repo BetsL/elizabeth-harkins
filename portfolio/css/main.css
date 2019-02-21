@@ -412,36 +412,62 @@ aside {
    ========================================================================== */
 
 
-   /*@media only screen and (min-width: 240px) and (max-width: 319px)  {
-       body {
-          font-size: 0.7em;
-       }
+   @media only screen and (min-width: 240px) and (max-width: 319px)  {
+     .header-container {
+         display: flex;
+           justify-content: inherit;
+           align-items: inherit;
+           flex-flow: row wrap;
+         font-size: 0.8em;
+         margin: 0;
+         padding-left: 5px;
+         width: 70%;
+     }
 
-       header .content-wrapper  {
-          font-size: 0.7em;
-       }
+     header .social-icons {
+         display: flex;
+         justify-content: space-around;
+         /*font-size: 0.8em;*/
+     }
 
-       .hero-area .content-wrapper  {
-          padding: 20px;
-       }
+     header nav  {
+         width: 90%;
+     }
 
-       .hero-area h1  {
-          font-size: 1.4em;
-       }
+     header nav ul {
+         display: flex;
+         justify-content: space-around;
+         flex-flow: row wrap;
+     }
 
-       .hero-area p {
-          font-size: 0.9em;
-          padding-right: 20px;
-       }
+     header nav ul li  {
+         display: flex;
+         justify-content: space-around;
+     }
 
-       #contact .content-wrapper  {
-          margin-left: 22px;
-          width: 80%;
-       }
-   }
+     header nav ul li a {
+        font-size: 0.8em;
+     }
+
+     .content-wrapper .personal-icons  {
+         display: flex;
+           justify-content: flex-end;
+           align-items: inherit;
+           flex-flow: row wrap;
+         font-size: 0.8em;
+         margin: 0;
+         padding-right: 5px;
+         width: 25%;
+     }
+
+     .content-wrapper .personal-icons p i  {
+         display: flex;
+         justify-content: space-between;
+         padding: 0 5px;
+     }
 
 
-   @media only screen and (min-width: 320px) and (max-width: 479px) {
+   /*@media only screen and (min-width: 320px) and (max-width: 479px) {
        body {
           font-size: 0.9em;
        }
