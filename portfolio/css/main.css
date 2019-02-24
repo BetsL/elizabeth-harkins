@@ -162,7 +162,8 @@ figure  {
 
 header  {
     border: 1px solid #a9a9a9;
-    border-radius: 3px;
+    border-radius: 5px;
+    border-style: double;
     margin: 20px 10px;
 }
 
@@ -188,7 +189,7 @@ header .content-wrapper {
 
 header .social-icons {
     display: flex;
-    justify-content: space-around;
+      justify-content: space-around;
     font-size: 1.1em;
 }
 
@@ -205,7 +206,7 @@ header nav ul {
 
 header nav ul li  {
     display: flex;
-    justify-content: space-around;
+      justify-content: space-around;
     padding-right: 10px;
 }
 
@@ -222,7 +223,7 @@ header nav ul li  {
 
 .content-wrapper .personal-icons p i  {
     display: flex;
-    justify-content: space-between;
+      justify-content: space-between;
     padding: 0 10px;
 }
 
@@ -230,7 +231,8 @@ header nav ul li  {
 
 #contact  {
     border: 1px solid #a9a9a9;
-    border-radius: 3px;
+    border-radius: 5px;
+    border-style: double;
     margin: 20px 10px;
 }
 
@@ -239,9 +241,9 @@ header nav ul li  {
       justify-content: center;
       align-items: center;
       flex-flow: column wrap;
+    margin: auto;
     text-align: center;
-    margin-left: 35px;
-    width: 85%;
+    width: 66.6%;
 }
 
 .footer-content {
@@ -288,7 +290,6 @@ header nav ul li  {
 /* Aside */
 
 aside {
-    /*line-height: 0.5;*/
     border: 1px solid #a9a9a9;
     border-radius: 3px;
     font-family: 'Roboto Mono', monospace;
@@ -298,7 +299,6 @@ aside {
 /* Backstory */
 
 #backstory {
-    /*line-height: 1.3em;*/
     border-left: 1px solid #f3e367;
     border-radius: none;
     margin: 40px 20px;
@@ -310,8 +310,8 @@ aside {
 #projects {
     border-radius: none;
     border-right: 1px solid #a9a9a9;
-    margin: 40px 20px;
     height: 90%;
+    margin: 40px 20px;
 }
 
 #projects article {
@@ -330,6 +330,8 @@ article figure {
    margin: 0;
    width: 90%;
 }
+
+
 
 
  /* ==========================================================================
@@ -429,53 +431,61 @@ article figure {
 
      .header-container {
          display: flex;
-           justify-content: inherit;
-           align-items: inherit;
-           flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: center;
+            flex-flow: row wrap;
          font-size: 0.8em;
          margin: 0;
-         padding-left: 5px;
+         padding-left: 3px;
          width: 70%;
      }
 
      header .social-icons {
          display: flex;
-         justify-content: space-around;
-         font-size: 1.1em;
-         padding-right: 3px;
+            justify-content: flex-start;
+         font-size: 1em;
      }
 
      header nav  {
-         width: 90%;
+         display: flex;
+            justify-content: flex-start;
+         width: 80%;
      }
 
      header nav ul {
          display: flex;
-         justify-content: space-around;
+         justify-content: flex-start;
          flex-flow: row wrap;
+     }
+
+     header nav ul li {
+         display: flex;
+         justify-content: flex-start;
      }
 
      header nav ul li a  {
          display: flex;
-         justify-content: space-around;
+            justify-content: flex-start;
          font-size: 0.8em;
+         font-weight: bold;
+         padding: 0;
      }
 
      .content-wrapper .personal-icons  {
          display: flex;
-           justify-content: flex-end;
-           align-items: inherit;
-           flex-flow: row wrap;
+            justify-content: flex-end;
+            align-items: inherit;
+            flex-flow: row wrap;
          font-size: 0.8em;
          margin: 0;
-         padding-right: 5px;
-         width: 25%;
+         padding-right: 3px;
+         width: 20%;
      }
 
      .content-wrapper .personal-icons p i  {
          display: flex;
-         justify-content: space-between;
-         padding: 0 5px;
+            justify-content: space-between;
+         padding: 0 3px;
      }
 
      main {
@@ -509,42 +519,54 @@ article figure {
         margin: 40px 10px;
      }
 
-     #contact .content-wrapper  {
-        margin-left: 20px;
-        width: 80%;
-     }
-
   }
+
 
   @media only screen and (min-width: 320px) and (max-width: 479px)  {
 
     body  {
-        font-size: 1em;
-        margin: 0;
+        font-size: 0.9em;
+        margin: 10px;
     }
 
     .header-container {
+        display: flex;
+          justify-content: flex-start;
         font-size: 0.9em;
-        padding-left: 7px;
+        padding-left: 5px;
+    }
+
+    header nav  {
+        display: flex;
+          justify-content: flex-start;
+        width: 80%;
+    }
+
+    header nav ul li  {
+        display: flex;
+          justify-content: flex-start;
+        padding-right: 7px;
     }
 
     header nav ul li a {
-       font-size: 1em;
+       font-size: 0.9em;
+       font-weight: bold;
     }
 
     .content-wrapper .personal-icons  {
         font-size: 0.9em;
         padding: 0;
+        width: 20%;
     }
 
     .content-wrapper .personal-icons p i  {
         display: flex;
-        justify-content: space-between;
+          justify-content: space-between;
         padding: 0 5px;
     }
 
     main  {
-        margin: 15px;
+        margin: 10px;
     }
 
     .hero-area .content-wrapper  {
@@ -573,12 +595,8 @@ article figure {
        margin: 40px 15px;
     }
 
-    #contact .content-wrapper  {
-       margin-left: 35px;
-       width: 80%;
-    }
-
  }
+
 
  @media only screen and (min-width: 768px) and (max-width: 1023px)  {
 
@@ -592,9 +610,9 @@ article figure {
    }
 
    .header-container {
-       font-size: 1.2em;
        display: flex;
-       justify-content: flex-start;
+          justify-content: flex-start;
+       font-size: 1.2em;
    }
 
    .header-container .social-icons  {
@@ -602,13 +620,9 @@ article figure {
        padding-left: 8px;
    }
 
-   /*header nav ul  {
-       border: 1px solid red;
-   }*/
-
    header nav ul li  {
        display: flex;
-       justify-content: space-around;
+          justify-content: space-around;
        padding-right: 20px;
    }
 
@@ -620,11 +634,6 @@ article figure {
        font-size: 1.2em;
        padding-right: 8px;
    }
-
-   /*.hero-area figure {
-       margin: 0;
-       width: 40%;
-   }*/
 
    .hero-area h1  {
       font-size: 3.7em;
@@ -647,12 +656,8 @@ article figure {
       width: 85%;
    }
 
-   /*#contact .content-wrapper  {
-      margin-left: 90px;
-      width: 75%;
-   }*/
-
 }
+
 
 @media only screen and (min-width: 1024px)  {
 
@@ -667,7 +672,7 @@ article figure {
 
   .header-container {
       display: flex;
-      justify-content: flex-start;
+        justify-content: flex-start;
       font-size: 1.3em;
   }
 
@@ -685,11 +690,6 @@ article figure {
       font-size: 1.3em;
       padding-right: 8px;
   }
-
-  /*.hero-area figure {
-      margin: 0;
-      width: 40%;
-  }*/
 
   .hero-area h1 {
       font-size: 3.9em;
@@ -712,81 +712,10 @@ article figure {
      width: 75%;
   }
 
-  #contact .content-wrapper  {
-     margin-left: 135px;
-     width: 70%;
-  }
-
 }
 
 
 
-  /* @media only screen and (min-width: 320px) {
-
-
-       .hero-area p  {
-          font-size: 0.9em;
-          width: 80%;
-       }
-
-       #projects  {
-          border-right: none;
-       }
-
-       #contact .content-wrapper  {
-          margin-left: 30px;
-          width: 80%;
-       }
-   }*/
-
-
-   /*@media only screen and (min-width: 768px)  {
-        .social-icons,
-        .personal-icons {
-            font-size: 1.2em;
-            padding: 0 15px;
-        }
-
-        .personal-icons p {
-            padding-left: 15px;
-        }
-
-        #contact .content-wrapper {
-            margin-left: 50px;
-        }
-   }
-
-
-   @media only screen and (min-width: 1024px) {
-        body  {
-            font-size: 1.1em;
-        }
-
-        header, #contact  {
-            margin: 60px;
-        }
-
-        main  {
-            margin: 60px;
-            padding: 60px;
-        }
-
-        .hero-area figure {
-            width: 33%;
-        }
-
-        figure  {
-            width: 66%;
-        }
-
-        .personal-description {
-            width: 80%;
-        }
-
-        #contact .content-wrapper {
-            margin-left: 70px;
-        }
-   }*/
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
