@@ -531,15 +531,111 @@ article figure {
 
     .header-container {
         display: flex;
-          justify-content: flex-start;
-        font-size: 0.9em;
+           justify-content: flex-start;
+           align-items: center;
+           flex-flow: row wrap;
+        font-size: 0.8em;
+        margin: 0;
         padding-left: 5px;
+        width: 70%;
+    }
+
+    header .social-icons {
+        display: flex;
+           justify-content: flex-start;
+        font-size: 1em;
     }
 
     header nav  {
         display: flex;
-          justify-content: flex-start;
+           justify-content: flex-start;
         width: 80%;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: row wrap;
+    }
+
+    header nav ul li {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    header nav ul li a  {
+        display: flex;
+           justify-content: flex-start;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 0;
+    }
+
+    .content-wrapper .personal-icons  {
+        display: flex;
+           justify-content: flex-end;
+           align-items: inherit;
+           flex-flow: row wrap;
+        font-size: 0.8em;
+        margin: 0;
+        padding-right: 5px;
+        width: 20%;
+    }
+
+    .content-wrapper .personal-icons p i  {
+        display: flex;
+           justify-content: space-between;
+        padding: 0 3px;
+    }
+
+
+    /*header .content-wrapper {
+        border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-container, .social-icons, .personal-icons {
+        border: 1px solid red;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 0 0 5px;
+        margin-right: 0;
+        width: 79%;
+    }
+
+
+    /*.header-container {
+        display: flex;
+          justify-content: flex-start;
+        font-size: 0.9em;
+        padding-left: 5px;
+    }*/
+
+    /*.header-container {
+        display: flex;
+           justify-content: flex-start;
+           align-items: center;
+           flex-flow: row wrap;
+        font-size: 0.8em;
+        margin: 0;
+        padding-left: 3px;
+        width: 70%;
+    }
+
+    .header-container .social-icons {
+        font-size: 0.8em;
+        margin: auto 0;
+    }
+
+    /*header nav  {
+        display: flex;
+          justify-content: flex-start;
+        width: 75%;
+        padding: 3px;
     }
 
     header nav ul li  {
@@ -554,16 +650,17 @@ article figure {
     }
 
     .content-wrapper .personal-icons  {
-        font-size: 0.9em;
-        padding: 0;
+        font-size: 0.8em;
+        width: 15%;
+        /*padding: 0;
         width: 20%;
     }
 
     .content-wrapper .personal-icons p i  {
         display: flex;
-          justify-content: space-between;
+          justify-content: flex-end;
         padding: 0 5px;
-    }
+    }*/
 
     main  {
         margin: 10px;
