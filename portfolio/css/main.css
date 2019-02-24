@@ -550,7 +550,7 @@ article figure {
 
     header nav ul li a {
        font-size: 0.9em;
-       font-weight: bold;
+       /*font-weight: bold;*/
     }
 
     .content-wrapper .personal-icons  {
