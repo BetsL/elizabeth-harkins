@@ -257,11 +257,19 @@ body {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (max-width: 240px)  {
+@media only screen and (min-width: 240px) and (max-width: 320px)  {
+
+      #card-content {
+          width: 280px;
+          height: 280px;
+      }
 
       #card-content h1  {
-          font-size: 1em;
-          line-height: 1.3;
+          font-size: 1.2em;
+      }
+
+      #card-content p, a  {
+          font-size: 0.9em;
       }
 }
 
