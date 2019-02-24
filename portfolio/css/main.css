@@ -422,7 +422,7 @@ article figure {
    ========================================================================== */
 
 
-   @media only screen and (min-width: 240px) and (max-width: 319px)  {
+   @media only screen and (min-width: 240px) and (max-width: 320px)  {
 
      body {
         font-size: 0.8em;
@@ -522,7 +522,7 @@ article figure {
   }
 
 
-  @media only screen and (min-width: 320px) and (max-width: 479px)  {
+  @media only screen and (min-width: 321px) and (max-width: 479px)  {
 
     body  {
         font-size: 0.9em;
