@@ -260,8 +260,9 @@ body {
 @media only screen and (min-width: 240px) and (max-width: 320px)  {
 
       #card-content {
-          width: 280px;
-          height: 280px;
+          border-radius: none;
+          width: 275px;
+          height: 275px;
       }
 
       #card-content h1  {
