@@ -243,7 +243,7 @@ header nav ul li  {
       flex-flow: column wrap;
     margin: auto;
     text-align: center;
-    width: 66.3%;
+    width: 66%;
 }
 
 .footer-content {
@@ -424,10 +424,19 @@ article figure {
 
    @media only screen and (min-width: 240px) and (max-width: 320px)  {
 
+     /* GENERAL */
+
      body {
         font-size: 0.8em;
         margin: 0;
      }
+
+     main {
+        margin: 10px;
+        padding-bottom: 12px;
+     }
+
+     /* HEADER + FOOTER */
 
      .header-container {
          display: flex;
@@ -488,10 +497,7 @@ article figure {
          padding: 0 3px;
      }
 
-     main {
-        margin: 10px;
-        padding-bottom: 12px;
-     }
+     /* HERO AREA */
 
      .hero-area .content-wrapper  {
         padding: 50px 10px;
@@ -511,6 +517,8 @@ article figure {
         width: 85%;
      }
 
+     /* SECTIONS */
+
      #backstory {
         margin: 40px 10px;
      }
@@ -524,10 +532,18 @@ article figure {
 
   @media only screen and (min-width: 321px) and (max-width: 479px)  {
 
+    /* GENERAL */
+
     body  {
         font-size: 0.9em;
         margin: 10px;
     }
+
+    main  {
+        margin: 10px;
+    }
+
+    /* HEADER + FOOTER */
 
     .header-container {
         display: flex;
@@ -588,83 +604,7 @@ article figure {
         padding: 0 3px;
     }
 
-
-    /*header .content-wrapper {
-        border: 1px solid red;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .header-container, .social-icons, .personal-icons {
-        border: 1px solid red;
-    }
-
-    .header-container {
-        display: flex;
-        justify-content: flex-start;
-        padding: 0 0 0 5px;
-        margin-right: 0;
-        width: 79%;
-    }
-
-
-    /*.header-container {
-        display: flex;
-          justify-content: flex-start;
-        font-size: 0.9em;
-        padding-left: 5px;
-    }*/
-
-    /*.header-container {
-        display: flex;
-           justify-content: flex-start;
-           align-items: center;
-           flex-flow: row wrap;
-        font-size: 0.8em;
-        margin: 0;
-        padding-left: 3px;
-        width: 70%;
-    }
-
-    .header-container .social-icons {
-        font-size: 0.8em;
-        margin: auto 0;
-    }
-
-    /*header nav  {
-        display: flex;
-          justify-content: flex-start;
-        width: 75%;
-        padding: 3px;
-    }
-
-    header nav ul li  {
-        display: flex;
-          justify-content: flex-start;
-        padding-right: 7px;
-    }
-
-    header nav ul li a {
-       font-size: 0.8em;
-       font-weight: bold;
-    }
-
-    .content-wrapper .personal-icons  {
-        font-size: 0.8em;
-        width: 15%;
-        /*padding: 0;
-        width: 20%;
-    }
-
-    .content-wrapper .personal-icons p i  {
-        display: flex;
-          justify-content: flex-end;
-        padding: 0 5px;
-    }*/
-
-    main  {
-        margin: 10px;
-    }
+    /* HERO AREA */
 
     .hero-area .content-wrapper  {
        padding: 50px 15px;
@@ -684,6 +624,8 @@ article figure {
        width: 85%;
     }
 
+    /* SECTIONS */
+
     #backstory {
        margin: 40px 15px;
     }
@@ -697,6 +639,8 @@ article figure {
 
  @media only screen and (min-width: 768px) and (max-width: 1023px)  {
 
+   /* GENERAL */
+
    body {
       font-size: 1.2em;
       margin: 30px;
@@ -705,6 +649,8 @@ article figure {
    main {
       padding: 30px;
    }
+
+   /* HEADER + FOOTER */
 
    .header-container {
        display: flex;
@@ -732,13 +678,19 @@ article figure {
        padding-right: 8px;
    }
 
+   /* HERO AREA */
+
    .hero-area h1  {
       font-size: 3.7em;
    }
 
+   /* ASIDE */
+
    aside  {
       padding: 0 20px;
    }
+
+   /* SECTIONS */
 
    #backstory {
       padding: 0 20px;
@@ -758,6 +710,8 @@ article figure {
 
 @media only screen and (min-width: 1024px)  {
 
+  /* GENERAL */
+
   body  {
       font-size: 1.3em;
       margin: 50px;
@@ -766,6 +720,8 @@ article figure {
   main {
      padding: 50px;
   }
+
+  /* HEADER + FOOTER */
 
   .header-container {
       display: flex;
@@ -788,13 +744,19 @@ article figure {
       padding-right: 8px;
   }
 
+  /* HERO */
+
   .hero-area h1 {
       font-size: 3.9em;
   }
 
+  /* ASIDE */
+
   aside  {
      padding: 0 20px;
   }
+
+  /* SECTIONS */
 
   #backstory {
      padding: 0 20px;
