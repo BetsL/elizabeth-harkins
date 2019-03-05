@@ -714,11 +714,11 @@ article figure {
 
   body  {
       font-size: 1.3em;
-      margin: 50px;
+      margin: 65px 80px;
   }
 
   main {
-     padding: 50px;
+     padding: 65px 80px;
   }
 
   /* HEADER + FOOTER */
