@@ -322,6 +322,10 @@ aside {
     width: 90%;
 }*/
 
+.problem {
+    text-decoration: underline;
+}
+
 .solution {
     color: #f3e367;
 }
