@@ -30,7 +30,7 @@
                     </div>
                     <p>Teacher//Developer. Continuously creating content collaboratively.
                     +/- alliteration.</p>
-                      <p><a href="portfolio/index.html">Hello ... </a></p>
+                    <button id="enter"><a href="portfolio/index.html">Hello ... </a></button>
                 </div>
             </div>
         </section>
@@ -49,5 +49,14 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+
+        <script>
+            function changeDiv(){
+                document.getElementById('enter').style.backgroundColor = '#d3d3d3';
+            };
+
+            document.getElementById('enter').onclick = changeDiv;
+        </script>
+
     </body>
 </html>
