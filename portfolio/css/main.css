@@ -326,6 +326,10 @@ aside {
     text-decoration: underline;
 }
 
+p span {
+    text-decoration: underline;
+}
+
 .solution {
     color: #f3e367;
 }
