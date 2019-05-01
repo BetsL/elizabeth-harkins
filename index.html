@@ -29,7 +29,24 @@
                         <h1>Elizabeth Harkins</h1>
                     </div>
                     <p>Teacher//Developer//Intersector. Lover of JavaScript.</p>
-                    <button id="enter"><a href="portfolio/index.html">Hello ... </a></button>
+                    <a href="portfolio/index.html">
+                        <svg class="icon-arrow before">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span class="label">Hello</span>
+                        <svg class="icon-arrow after">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                    </a>
+
+                    <svg style="display: none;">
+                      <defs>
+                        <symbol id="arrow" viewBox="0 0 35 15">
+                          <title>Arrow</title>
+                          <path d="M27.172 5L25 2.828 27.828 0 34.9 7.071l-7.07 7.071L25 11.314 27.314 9H0V5h27.172z "/>
+                        </symbol>
+                      </defs>
+                    </svg>
                 </div>
             </div>
         </section>
@@ -50,12 +67,13 @@
         </script>
 
         <script>
+            /*
             function changeDiv(){
                 document.getElementById('enter').style.backgroundColor = '#d3d3d3';
             };
 
             document.getElementById('enter').onclick = changeDiv;
-
+            */
         </script>
 
     </body>
