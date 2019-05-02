@@ -110,11 +110,14 @@
               <h2>Projects</h2>
               <div class="project-items">
                   <article>
-                      <h3 class="problem">The Problem</h3>
-                          <p>"How do I modernize information distribution and make it concise, available?"</p>
-                      <h3 class="solution">The Solution</h3>
-                          <p>The Targeted Mini-Site</p>
                           <figure>
+                              <button id="master"><span>+</span></button>
+                                  <div id="unreliable">
+                                      <h3 class="problem">The Problem</h3>
+                                          <p>"How do I modernize information distribution and make it concise, available?"</p>
+                                      <h3 class="solution">The Solution</h3>
+                                          <p>The Targeted Mini-Site</p>
+                                  </div>
                               <a href="https://betsl.github.io/read/" target="_blank">
                                   <img src="img/reading-strategies-too.png" alt="Reading Website">
                               </a>
@@ -197,4 +200,17 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+  <script>
+      function togglePlay(){
+    	const x = document.getElementById('unreliable');
+    	if (x.style.display === 'block') {
+    		x.style.display = 'none';
+    	} else {
+    		x.style.display = 'block';
+    	}
+    }
+
+    document.getElementById('master').onclick = togglePlay;
+  </script>
 </body>
