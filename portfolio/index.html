@@ -111,49 +111,58 @@
               <div class="project-items">
                   <article>
                           <figure>
-                              <button id="master"><span>+</span></button>
-                                  <div id="unreliable">
-                                      <h3 class="problem">The Problem</h3>
-                                          <p>"How do I modernize information distribution and make it concise, available?"</p>
-                                      <h3 class="solution">The Solution</h3>
-                                          <p>The Targeted Mini-Site</p>
-                                  </div>
                               <a href="https://betsl.github.io/read/" target="_blank">
                                   <img src="img/reading-strategies-too.png" alt="Reading Website">
                               </a>
                           </figure>
+                          <button id="master"><span>+</span></button>
+                              <div id="unreliable">
+                                  <h3 class="problem">The Problem</h3>
+                                      <p>"How do I modernize information distribution and make it concise, available?"</p>
+                                  <h3 class="solution">The Solution</h3>
+                                      <p>The Targeted Mini-Site</p>
+                              </div>
                   </article>
                   <article>
-                      <h3 class="problem">The Problem</h3>
-                          <p>"How can I keep families interested and informed about life in our classroom?"</p>
-                      <h3 class="solution">The Solution</h3>
-                          <p>The Beyond Newsletter</p>
                           <figure>
                               <a href="https://betsl.github.io/skills-and-news/" target="_blank">
                                   <img src="img/beyond-newsletter.png" alt="Newsletter Interface">
                               </a>
                           </figure>
+                          <button id="blaster"><span>+</span></button>
+                              <div id="reliable">
+                                  <h3 class="problem">The Problem</h3>
+                                      <p>"How can I keep families interested and informed about life in our classroom?"</p>
+                                  <h3 class="solution">The Solution</h3>
+                                      <p>The Beyond Newsletter</p>
+                              </div>
                   </article>
                   <article>
-                      <h3 class="problem">The Challenge</h3>
-                          <p>"How can I transform a static home page into a responsive one?"</p>
-                      <h3 class="solution">The Solution</h3>
-                          <p>Rogue Pickings Produce Stand Page</p>
                           <figure>
                               <a href="https://betsl.github.io/static-rogue-goes-responsive/" target="_blank">
                                   <img src="img/rogue-pickings-site.png" alt="Rogue Produce Site">
                               </a>
                           </figure>
+                          <button id="faster"><span>+</span></button>
+                              <div id="pliable">
+                                  <h3 class="problem">The Challenge</h3>
+                                      <p>"How can I transform a static home page into a responsive one?"</p>
+                                  <h3 class="solution">The Solution</h3>
+                                      <p>Rogue Pickings Produce Stand Page</p>
+                              </div>
                   <article>
-                      <h3 class="problem">The Challenge</h3>
-                          <p>"How can I create a full-scale, responsive + intriguing company retreat site from a Photoshop design comp?"</p>
-                      <h3 class="solution">The Solution</h3>
-                          <p>Unplugged Retreat Site</p>
                           <figure>
                               <a href="https://betsl.github.io/unplugged-retreat-site/" target="_blank">
                                   <img src="img/unplugged-site.png" alt="Unplugged Retreat Site">
                               </a>
                           </figure>
+                          <button id="zaster"><span>+</span></button>
+                              <div id="sliable">
+                                  <h3 class="problem">The Challenge</h3>
+                                      <p>"How can I create a full-scale, responsive + intriguing company retreat site from a Photoshop design comp?"</p>
+                                  <h3 class="solution">The Solution</h3>
+                                      <p>Unplugged Retreat Site</p>
+                              </div>
                   </article>
                   <article>
                       <h3 class="problem">Currently ...</h3>
@@ -202,7 +211,7 @@
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 
   <script>
-      function togglePlay(){
+      function togglePlay1(){
     	const x = document.getElementById('unreliable');
     	if (x.style.display === 'block') {
     		x.style.display = 'none';
@@ -211,6 +220,39 @@
     	}
     }
 
-    document.getElementById('master').onclick = togglePlay;
+    document.getElementById('master').onclick = togglePlay1;
+
+      function togglePlay2(){
+      const x = document.getElementById('reliable');
+      if (x.style.display === 'block') {
+        x.style.display = 'none';
+      } else {
+        x.style.display = 'block';
+      }
+    }
+
+    document.getElementById('blaster').onclick = togglePlay2;
+
+      function togglePlay3(){
+      const x = document.getElementById('pliable');
+      if (x.style.display === 'block') {
+        x.style.display = 'none';
+      } else {
+        x.style.display = 'block';
+      }
+    }
+
+    document.getElementById('faster').onclick = togglePlay3;
+
+      function togglePlay4(){
+      const x = document.getElementById('sliable');
+      if (x.style.display === 'block') {
+        x.style.display = 'none';
+      } else {
+        x.style.display = 'block';
+      }
+    }
+
+    document.getElementById('zaster').onclick = togglePlay4;
   </script>
 </body>
