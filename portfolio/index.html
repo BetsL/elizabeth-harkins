@@ -36,7 +36,7 @@
           <a href="#news">Backstory</a>
           <a href="#contact">Projects</a>
           <a href="#about">Contact</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <a href="javascript:void(0);" class="icon" onclick="navCollapse()">
             <i class="fa fa-bars"></i>
           </a>
       </div>
@@ -201,8 +201,8 @@
 
   <script>
       /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
+    function navCollapse() {
+      let x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
         x.className += " responsive";
       } else {
