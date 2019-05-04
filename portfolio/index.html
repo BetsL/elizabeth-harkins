@@ -163,7 +163,7 @@
                       <h3 id="problem2">in the works ... </h3>
                           <div id="expandProblem2">
                               <ul>
-                                  <li>I'm on a path of study that will ultimately utilize an image recognition API for an app that I play to deploy to Heroku.</p>
+                                  <li>I'm on a path of study that will ultimately utilize an image recognition API for an app that I plan to deploy to Heroku.</p>
                               </ul>
                           </div>
                   </article>
@@ -266,23 +266,26 @@
     var y = document.getElementById('expandProblem2');
 
     document.getElementById('problem').onclick = function(){
-        x.style.borderTop = '0.5px solid #d3d3d3';
-        /*x.style.borderRadius = '3px';*/
+        x.classList.add('grayscale');
+        /*x.style.border = '1px dotted #222';*/
+        x.style.borderRadius = '6.5px';
+        x.style.color = '#222';
         x.style.width = 'auto';
         x.style.height = 'auto';
         x.style.overflow = 'visible';
-        x.style.paddingTop = '20px';
-        /*x.style.textAlign = 'right';*/
+        x.style.padding = '20px';
     };
 
     document.getElementById('problem2').onclick = function(){
-        y.style.borderTop = '0.5px solid #d3d3d3';
-        /*y.style.borderRadius = '3px';*/
+        y.classList.add('grayscale');
+        /*y.style.border = '1px solid #222';*/
+        y.style.borderRadius = '6.5px';
+        y.style.color = '#222';
         y.style.width = 'auto';
         y.style.height = 'auto';
         y.style.overflow = 'visible';
-        y.style.paddingTop = '20px';
-        /*y.style.textAlign = 'right';*/
+        y.style.padding = '20px';
     };
-  </script>
+    </script>
+
 </body>
