@@ -362,7 +362,8 @@ aside {
 
 #backstory h2,
 #projects h2,
-.problem {
+#problem,
+#problem2 {
     color: #f3e367;
     opacity: 5;
 }
@@ -386,26 +387,15 @@ article figure {
 }
 
 button {
-  background-color: #d3d3d3;
-  border-radius: 10px;
-  outline-style: none;
+    background-color: #d3d3d3;
+    border: 1px solid #a9a9a9;
+    border-radius: 10px;
+    outline-style: none;
 }
 
 
 button span {
-  /*border-radius: 3px;*/
-	color: transparent;
-	background-image: linear-gradient(0deg, black 0%, gray 100%);
-	-webkit-background-clip: text;
-	background-clip: text;
-  -webkit-filter: drop-shadow(0 2px 2px hsla(220, 100%, 20%, 1));
-	filter: drop-shadow(0 2px 2px hsla(220, 100%, 20%, 1));
-  padding: auto 4rem;
-}
-
-button span:hover {
-  -webkit-transform: scale3d(3);
-  transform: scale3d(3);
+    color: #000;
 }
 
 #unreliable,
@@ -414,6 +404,20 @@ button span:hover {
 #sliable {
     display: none;
     outline-style: none;
+}
+
+#problem:hover,
+#problem2:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#expandProblem,
+#expandProblem2 {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    transition: all 1s;
 }
 
 .solution {

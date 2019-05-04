@@ -154,14 +154,18 @@
                               </div>
                   </article>
                   <article>
-                      <h3 class="problem">currently ...</h3>
-                          <p>Updating my classroom resources with JavaScript for the best user experience</p>
-                          <p>Diving deep into ES6</p>
-                          <p>Devouring Marijn Haverbeke's <span>Eloquent JavaScript</span></p>
-                      <h3 class="problem">in the works ... </h3>
-                          <ul>
-                              <li>I'm on a path of study that will ultimately utilize an image recognition API for an app that I play to deploy to Heroku.</p>
-                          </ul>
+                      <h3 id="problem">currently ...</h3>
+                          <div id="expandProblem">
+                              <p>Updating my classroom resources with JavaScript for the best user experience</p>
+                              <p>Diving deep into ES6</p>
+                              <p>Devouring Marijn Haverbeke's <span>Eloquent JavaScript</span></p>
+                          </div>
+                      <h3 id="problem2">in the works ... </h3>
+                          <div id="expandProblem2">
+                              <ul>
+                                  <li>I'm on a path of study that will ultimately utilize an image recognition API for an app that I play to deploy to Heroku.</p>
+                              </ul>
+                          </div>
                   </article>
               </div>
           </div>
@@ -255,5 +259,28 @@
     }
 
     document.getElementById('zaster').onclick = togglePlay4;
+  </script>
+
+  <script>
+    var x = document.getElementById('expandProblem');
+    var y = document.getElementById('expandProblem2');
+
+    document.getElementById('problem').onclick = function(){
+        x.style.borderTop = '0.5px solid #d3d3d3';
+        /*x.style.borderRadius = '3px';*/
+        x.style.width = 'auto';
+        x.style.height = 'auto';
+        x.style.overflow = 'visible';
+        x.style.padding = '20px';
+    };
+
+    document.getElementById('problem2').onclick = function(){
+        y.style.borderTop = '0.5px solid #d3d3d3';
+        /*y.style.borderRadius = '3px';*/
+        y.style.width = 'auto';
+        y.style.height = 'auto';
+        y.style.overflow = 'visible';
+        y.style.padding = '20px';
+    };
   </script>
 </body>
