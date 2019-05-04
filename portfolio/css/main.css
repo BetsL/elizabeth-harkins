@@ -397,11 +397,13 @@ button span {
 	background-image: linear-gradient(0deg, black 0%, gray 100%);
 	-webkit-background-clip: text;
 	background-clip: text;
+  -webkit-filter: drop-shadow(0 2px 2px hsla(220, 100%, 20%, 1));
 	filter: drop-shadow(0 2px 2px hsla(220, 100%, 20%, 1));
   padding: auto 4rem;
 }
 
 button span:hover {
+  -webkit-transform: scale3d(3);
   transform: scale3d(3);
 }
 
