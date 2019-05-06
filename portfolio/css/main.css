@@ -130,7 +130,7 @@ ol  {
 }
 
 a {
-    color: #000;
+    color: #222;
     text-decoration: none;
 }
 
@@ -329,7 +329,7 @@ button {
 
 
 button span {
-    color: #000;
+    color: #222;
 }
 
 #unreliable,
