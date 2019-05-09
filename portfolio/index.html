@@ -59,18 +59,14 @@
       <aside>
           <div class="content-wrapper">
               <div class="personal-description">
-                  <div class="tagline">
-                      <h3>A {Hand-Coded} Portfolio</h3>
-                      <p>by Bets</p>
-                  </div>
-                  <div class="tagline">
-                      <h3>Location</h3>
-                      <p>Richmond, Virginia USA</p>
-                  </div>
-                  <div class="tagline">
-                      <h3>Employment</h3>
-                      <p>Kindergarten Teacher @ Henrico County</p>
-                  </div>
+                  <ul id="tagline">
+                      <li>A {Hand-Coded} Portfolio</li>
+                      <li>by Bets</li>
+                      <li>Location</li>
+                      <li>Richmond, Virginia USA</li>
+                      <li>Employment</li>
+                      <li>Kindergarten Teacher @ Henrico County</li>
+                  </ul>
               </div>
           </div>
       </aside>
@@ -80,14 +76,14 @@
               <h2>backstory</h2>
               <div class="features-items">
                   <article>
-                      <p>My journey into tech started with tinkering with my classroom website. After I began
+                      <p id="test">My journey into tech started with tinkering with my classroom website. After I began
                         playing around with basic HTML and CSS, I was hooked! I became curious about how
                         to build dynamic materials for my classroom and personal interests.</p>
-                      <p>When I learned how to build my first website, I realized I had found something that
+                      <p id="test2">When I learned how to build my first website, I realized I had found something that
                         gave me the freedom + versatility I was looking for in my work. I thoroughly enjoy
                         front-end development, where I can use my organizational skills and eye for detail to write
                         clean, elegant code.</p>
-                      <p>I continue to be excited to build and develop tools for use with
+                      <p id="test3">I continue to be excited to build and develop tools for use with
                         my classroom community.</p>
                   </article>
               </div>
@@ -213,6 +209,42 @@
         x.className = "topnav";
       }
     }
+  </script>
+
+  <script>
+
+  let test = document.getElementById("test");
+  let test2 = document.getElementById("test2");
+  let test3 = document.getElementById("test3");
+
+  // executes every time cursor moves over different article item
+  test.addEventListener("mouseover", function(){
+      // highlight the mouseover target
+      event.target.style.color = "pink";
+  });
+
+  test2.addEventListener("mouseover", function(){
+      // highlight the mouseover target
+      event.target.style.color = "pink";
+  });
+
+  test3.addEventListener("mouseover", function(){
+      // highlight the mouseover target
+      event.target.style.color = "pink";
+  });
+
+  test.addEventListener("mouseout", function(){
+      event.target.style.color = "#d3d3d3";
+  });
+
+  test2.addEventListener("mouseout", function(){
+      event.target.style.color = "#d3d3d3";
+  });
+
+  test3.addEventListener("mouseout", function(){
+      event.target.style.color = "#d3d3d3";
+  });
+
   </script>
 
   <script>
