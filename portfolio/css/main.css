@@ -142,10 +142,6 @@ p {
     line-height: 1.3;
 }
 
-li {
-    line-height: 1.3;
-}
-
 img {
     width: 100%;
 }
@@ -283,10 +279,6 @@ aside {
     border-bottom: 1px solid #a9a9a9;
     font-family: 'Roboto Mono', monospace;
     margin: 0 20px;
-}
-
-#tagline li {
-    padding: 10px 0;
 }
 
 /* Backstory */
