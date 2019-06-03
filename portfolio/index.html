@@ -105,7 +105,7 @@
                               </a>
                           </figure>
                           <button id="master"><span>+</span></button>
-                              <div id="unreliable">
+                              <div id="hidden">
                                   <h3 class="problem">The Problem</h3>
                                       <p>"How do I modernize information distribution and make it concise, available?"</p>
                                   <h3 class="solution">The Solution</h3>
@@ -118,8 +118,8 @@
                                   <img src="img/beyond-newsletter.png" alt="Newsletter Interface">
                               </a>
                           </figure>
-                          <button id="blaster"><span>+</span></button>
-                              <div id="reliable">
+                          <button id="master2"><span>+</span></button>
+                              <div id="hidden2">
                                   <h3 class="problem">The Problem</h3>
                                       <p>"How can I keep families interested and informed about life in our classroom?"</p>
                                   <h3 class="solution">The Solution</h3>
@@ -132,8 +132,8 @@
                                   <img src="img/rogue-pickings-site.png" alt="Rogue Produce Site">
                               </a>
                           </figure>
-                          <button id="faster"><span>+</span></button>
-                              <div id="pliable">
+                          <button id="master3"><span>+</span></button>
+                              <div id="hidden3">
                                   <h3 class="problem">The Challenge</h3>
                                       <p>"How can I transform a static home page into a responsive one?"</p>
                                   <h3 class="solution">The Solution</h3>
@@ -145,8 +145,8 @@
                                   <img src="img/unplugged-site.png" alt="Unplugged Retreat Site">
                               </a>
                           </figure>
-                          <button id="zaster"><span>+</span></button>
-                              <div id="sliable">
+                          <button id="master4"><span>+</span></button>
+                              <div id="hidden4">
                                   <h3 class="problem">The Challenge</h3>
                                       <p>"How can I create a full-scale, responsive + intriguing company retreat site from a Photoshop design comp?"</p>
                                   <h3 class="solution">The Solution</h3>
@@ -253,7 +253,7 @@
 
   <script>
       function togglePlay1(){
-    	const x = document.getElementById('unreliable');
+    	const x = document.getElementById('hidden');
     	if (x.style.display === 'block') {
     		x.style.display = 'none';
     	} else {
@@ -264,7 +264,7 @@
     document.getElementById('master').onclick = togglePlay1;
 
       function togglePlay2(){
-      const x = document.getElementById('reliable');
+      const x = document.getElementById('hidden2');
       if (x.style.display === 'block') {
         x.style.display = 'none';
       } else {
@@ -272,10 +272,10 @@
       }
     }
 
-    document.getElementById('blaster').onclick = togglePlay2;
+    document.getElementById('master2').onclick = togglePlay2;
 
       function togglePlay3(){
-      const x = document.getElementById('pliable');
+      const x = document.getElementById('hidden3');
       if (x.style.display === 'block') {
         x.style.display = 'none';
       } else {
@@ -283,10 +283,10 @@
       }
     }
 
-    document.getElementById('faster').onclick = togglePlay3;
+    document.getElementById('master3').onclick = togglePlay3;
 
       function togglePlay4(){
-      const x = document.getElementById('sliable');
+      const x = document.getElementById('hidden4');
       if (x.style.display === 'block') {
         x.style.display = 'none';
       } else {
@@ -294,7 +294,7 @@
       }
     }
 
-    document.getElementById('zaster').onclick = togglePlay4;
+    document.getElementById('master4').onclick = togglePlay4;
   </script>
 
   <script>
