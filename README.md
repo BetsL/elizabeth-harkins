@@ -1,7 +1,7 @@
 # elizabeth-harkins
 Spring 2019 Portfolio
 
-This project has brought me such joy as - essentially - a JS playground. At the time I began the project, I was listening to a lot of Bowie ('Ziggy Stardust') and spending time with family, which led to Nintendo reminiscing. The result is this fun amalgamation of outer-space/Game Boy/claymation.
+This project has brought me such joy as - essentially - a JS playground. At the time I began the project, I was listening to a lot of Bowie ('Ziggy Stardust') and spending time with family, which led to Nintendo reminiscing. The result is this fun amalgamation of outer-space/Game Boy/claymation. I am working on my next portfolio iteration, which I think will involve CSS Grid.
 
 ![springfolio-card](https://user-images.githubusercontent.com/44883733/54650067-0cf40280-4a83-11e9-9aad-2782b43f5767.png)
 
